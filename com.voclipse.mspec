@@ -3,9 +3,9 @@
     name="com.voclipse" 
     materializer="p2" 
     url="com.voclipse.cquery">
-    <property key="target.arch" value="*" />
-    <property key="target.os" value="*" />
-    <property key="target.ws" value="*" />
+    <md:property key="target.arch" value="*" />
+    <md:property key="target.os" value="*" />
+    <md:property key="target.ws" value="*" />
 
     <md:mspecNode namePattern="^org\.eclipse\.jdt\.ui?" materializer="workspace"/>
 
