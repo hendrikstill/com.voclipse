@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rm:rmap xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
+
+  <!-- ===================== -->
+  <!-- here order matters!!! -->
+  <!-- ===================== -->
+
+  <rm:locator pattern="^org\.eclipse\.jdt\.ui?" searchPathRef="eclipse.jdt.ui"/>
+
+  <rm:locator pattern="^com\.voclipse(\..+)?" searchPathRef="com.voclipse"/>
+  <rm:locator pattern=".*" searchPathRef="default"/>
+
+  <!-- ================================= -->
+  <!-- below here, order does not matter -->
+  <!-- ================================= -->
+
+  <rm:searchPath name="eclipse.jdt.ui">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" source="false" mutable="false" readerType="local">
+      <rm:uri format="file:{0}/eclipse.platform.releng.aggregator/eclipse.jdt.ui/{1}/">
+        <bc:propertyRef key="projectsPath"/>
+        <bc:propertyRef key="buckminster.component"/>
+      </rm:uri>
+    </rm:provider>
+   </rm:searchPath>
+
+  <rm:searchPath name="com.voclipse">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" source="false" mutable="false" readerType="local">
+      <rm:uri format="file:{0}/features/{1}/">
+        <bc:propertyRef key="projectsPath"/>
+        <bc:propertyRef key="buckminster.component"/>
+      </rm:uri>
+    </rm:provider>
+   </rm:searchPath>
+
+  <!-- Orbit and Eclipse Platform is where we get all bundles if not explicitly overridden -->
+  <rm:searchPath name="default">
+    <rm:provider componentTypes="osgi.bundle" readerType="p2" source="false" mutable="false">
+      <rm:property key="buckminster.source" value="false"/>
+      <rm:property key="buckminster.mutable" value="false"/>
+      <rm:uri format="http://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/R20130517111416/repository"/>
+    </rm:provider>
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="p2" source="false" mutable="false">
+      <rm:property key="buckminster.source" value="false"/>
+      <rm:property key="buckminster.mutable" value="false"/>
+      <rm:uri format="http://ftp.osuosl.org/pub/eclipse/eclipse/updates/4.3/"/>
+    </rm:provider>
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="p2" source="false" mutable="false">
+      <rm:property key="buckminster.source" value="false"/>
+      <rm:property key="buckminster.mutable" value="false"/>
+      <rm:uri format="http://ftp.osuosl.org/pub/eclipse/eclipse/updates/4.3milestones/"/>
+    </rm:provider>
+  </rm:searchPath>
+
+</rm:rmap>
