@@ -2,7 +2,7 @@
 <feature
       id="com.voclipse.jdt"
       label="Jdt"
-      version="1.0.0"
+      version="1.0.0.qualifier"
       provider-name="vogella GmbH">
 
    <description url="http://www.example.com/description">
