@@ -34,7 +34,7 @@
 
   <!-- Orbit and Eclipse Platform is where we get all bundles if not explicitly overridden -->
   <rm:searchPath name="default">
-    <rm:provider componentTypes="osgi.bundle" readerType="p2" source="false" mutable="false">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
       <rm:property key="buckminster.source" value="false"/>
       <rm:property key="buckminster.mutable" value="false"/>
       <rm:uri format="http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/R20130517111416/repository"/>
