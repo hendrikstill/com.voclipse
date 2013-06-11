@@ -15,7 +15,7 @@
   <!-- ================================= -->
 
   <rm:searchPath name="eclipse.jdt.ui">
-    <rm:provider componentTypes="osgi.bundle,eclipse.feature" source="false" mutable="false" readerType="local">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" source="true" mutable="false" readerType="local">
       <rm:uri format="file:{0}/eclipse.platform.releng.aggregator/eclipse.jdt.ui/{1}/">
         <bc:propertyRef key="projectsPath"/>
         <bc:propertyRef key="buckminster.component"/>
@@ -24,7 +24,7 @@
    </rm:searchPath>
 
   <rm:searchPath name="com.voclipse">
-    <rm:provider componentTypes="osgi.bundle,eclipse.feature" source="false" mutable="false" readerType="local">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" source="true" mutable="false" readerType="local">
       <rm:uri format="file:{0}/features/{1}/">
         <bc:propertyRef key="projectsPath"/>
         <bc:propertyRef key="buckminster.component"/>
