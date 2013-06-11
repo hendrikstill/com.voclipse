@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<cq:componentQuery xmlns:cq="http://www.eclipse.org/buckminster/CQuery-1.0" resourceMap="voclipse.rmap">
+<?xml version="1.0" encoding="UTF-8"?><cq:componentQuery xmlns:cq="http://www.eclipse.org/buckminster/CQuery-1.0" resourceMap="voclipse.rmap">
     <cq:rootRequest name="com.voclipse" componentType="eclipse.feature"/>
     <cq:property key="target.arch" value="*"/>
     <cq:property key="target.os" value="*"/>
     <cq:property key="target.ws" value="*"/>
 
-    <cq:advisorNode namePattern="^org\.eclipse\.jdt\.ui?" useTargetPlatform="false" useWorkspace="false"/>
+    <cq:advisorNode namePattern="^org\.eclipse\.jdt\.ui?" useMaterialization="false" useRemoteResolution="false" useTargetPlatform="false" versionOverride="[3.9.0.qualifier,3.9.0.qualifier]" sourceLevel="REQUIRE"/>
 
     <cq:advisorNode namePattern="^com\.voclipse(\..+)?" useTargetPlatform="false" useWorkspace="false"/>
     <cq:advisorNode namePattern="^org\.eclipse\.equinox\.p2\.user\.ui$" skipComponent="true" useTargetPlatform="false"/>
