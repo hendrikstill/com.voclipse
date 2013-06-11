@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.voclipse"
-      label="Voclipse master feature"
-      version="1.0.0"
-      provider-name="vogella GmbH">
+      id="com.voclipse.e4.rcp"
+      label="Voclipse"
+      version="1.0.0.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -17,12 +16,15 @@
       [Enter License Description here.]
    </license>
 
-   <includes
-         id="com.voclipse.jdt"
-         version="0.0.0"/>
+   <requires>
+      <import feature="org.eclipse.e4.rcp" version="1.2.0" patch="true"/>
+   </requires>
 
-   <includes
-         id="com.voclipse.e4.rcp"
-         version="0.0.0"/>
+   <plugin
+         id="org.eclipse.e4.ui.workbench"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
