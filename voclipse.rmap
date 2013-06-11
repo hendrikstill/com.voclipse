@@ -37,17 +37,17 @@
     <rm:provider componentTypes="osgi.bundle" readerType="p2" source="false" mutable="false">
       <rm:property key="buckminster.source" value="false"/>
       <rm:property key="buckminster.mutable" value="false"/>
-      <rm:uri format="http://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/R20130517111416/repository"/>
+      <rm:uri format="http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/R20130517111416/repository"/>
     </rm:provider>
     <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="p2" source="false" mutable="false">
       <rm:property key="buckminster.source" value="false"/>
       <rm:property key="buckminster.mutable" value="false"/>
-      <rm:uri format="http://ftp.osuosl.org/pub/eclipse/eclipse/updates/4.3/"/>
+      <rm:uri format="http://ftp.halifax.rwth-aachen.de/eclipse/eclipse/updates/4.3/"/>
     </rm:provider>
     <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="p2" source="false" mutable="false">
       <rm:property key="buckminster.source" value="false"/>
       <rm:property key="buckminster.mutable" value="false"/>
-      <rm:uri format="http://ftp.osuosl.org/pub/eclipse/eclipse/updates/4.3milestones/"/>
+      <rm:uri format="http://ftp.halifax.rwth-aachen.de/eclipse/eclipse/updates/4.3milestones/"/>
     </rm:provider>
   </rm:searchPath>
 
