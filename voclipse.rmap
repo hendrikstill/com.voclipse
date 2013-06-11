@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rm:rmap xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
+<rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:pde="http://www.eclipse.org/buckminster/PDEMapProvider-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
 
   <!-- ===================== -->
   <!-- here order matters!!! -->
