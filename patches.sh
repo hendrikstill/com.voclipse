@@ -1,10 +1,7 @@
 #!/bin/bash
 
-BASE=${WORKSPACE}
-
-test -e $BASE/eclipse.platform.releng.aggregator/ || exit 1
-
 GIT_REPOS=`cat patches.txt`
+BASE=`pwd`
 
 for line in $GIT_REPOS; do
     # split line into chunks
@@ -16,7 +13,6 @@ for line in $GIT_REPOS; do
     BUNDLES_TO_BUILD=${array[4]}
 
     # local path has to be relative to aggregator folder
-    cd $BASE/eclipse.platform.releng.aggregator/
     cd $LOCAL_PATH
 
     # Check if repo has been added before
@@ -25,6 +21,7 @@ for line in $GIT_REPOS; do
     fi
     git pull $ID $BRANCH
 
+    cd $BASE
 done
 
 
