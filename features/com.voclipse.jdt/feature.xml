@@ -6,7 +6,8 @@
       provider-name="vogella GmbH">
 
    <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
+      # https://bugs.eclipse.org/333428
+VOPATCH=333428,https://github.com/kuppe/eclipse.jdt.ui.git,master,eclipse.jdt.ui/
    </description>
 
    <copyright url="http://www.example.com/copyright">

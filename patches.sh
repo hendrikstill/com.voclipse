@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_REPOS=`cat patches.txt`
+GIT_REPOS=`grep -h VOPATCH= features/*/feature.xml | cut -f 2 -d'='`
 BASE=`pwd`
 
 for line in $GIT_REPOS; do
