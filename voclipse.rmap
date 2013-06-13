@@ -6,6 +6,8 @@
   <!-- ===================== -->
 
   <rm:locator pattern="^org\.eclipse\.jdt\.ui$" searchPathRef="eclipse.jdt.ui"/>
+  <rm:locator pattern="^org\.eclipse\.core\.expressions$" searchPathRef="eclipse.platform.runtime"/>
+
   <rm:locator pattern="^org\.eclipse\.e4\.ui\.workbench$" searchPathRef="eclipse.platform.ui"/>
 
   <rm:locator pattern="^com\.voclipse(\..+)?" searchPathRef="com.voclipse"/>
@@ -34,6 +36,17 @@
           </rm:uri>
          <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/platform/eclipse.platform.ui"/>
          <rm:property key="git.remote.name" value="eclipse.platform.ui"/>
+     </rm:provider>
+  </rm:searchPath>
+
+  <rm:searchPath name="eclipse.platform.runtime">
+     <rm:provider readerType="git" componentTypes="osgi.bundle,eclipse.feature" resolutionFilter="">
+          <rm:uri format="{0}/eclipse.platform.runtime,bundles/{1}">
+              <bc:propertyRef key="workspace.root" />
+              <bc:propertyRef key="buckminster.component" />
+          </rm:uri>
+         <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/platform/eclipse.platform.runtime"/>
+         <rm:property key="git.remote.name" value="eclipse.platform.runtime"/>
      </rm:provider>
   </rm:searchPath>
 
