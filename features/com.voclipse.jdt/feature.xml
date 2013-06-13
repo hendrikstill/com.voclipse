@@ -6,7 +6,11 @@
       provider-name="vogella GmbH">
 
    <description url="http://www.example.com/description">
-      # https://bugs.eclipse.org/333428
+      # Bug 149110 - [package explorer] Text Box Filter in Package Explorer
+# https://bugs.eclipse.org/149110
+# 
+# Bug 333428 - [content assist] Creating an anonymous inner class doesn&apos;t add a semicolon to enclosing method invocation
+# https://bugs.eclipse.org/333428
 VOPATCH=333428,https://github.com/kuppe/eclipse.jdt.ui.git,master,eclipse.jdt.ui/
    </description>
 
