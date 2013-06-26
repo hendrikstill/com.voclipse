@@ -74,12 +74,7 @@
     <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="p2" source="false" mutable="false">
       <rm:property key="buckminster.source" value="false"/>
       <rm:property key="buckminster.mutable" value="false"/>
-      <rm:uri format="http://ftp.halifax.rwth-aachen.de/eclipse/eclipse/updates/4.3milestones/"/>
-    </rm:provider>
-    <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="p2" source="false" mutable="false">
-      <rm:property key="buckminster.source" value="false"/>
-      <rm:property key="buckminster.mutable" value="false"/>
-      <rm:uri format="http://ftp.halifax.rwth-aachen.de/eclipse/releases/kepler/201306070900/"/>
+      <rm:uri format="http://ftp.halifax.rwth-aachen.de/eclipse/releases/kepler/"/>
     </rm:provider>
    </rm:searchPath>
 
