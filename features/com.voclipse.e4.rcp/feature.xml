@@ -7,6 +7,8 @@
    <description url="http://www.example.com/description">
       # https://bugs.eclipse.org/403331
 VOPATCH=403331,git://git.eclipse.org/gitroot/platform/eclipse.platform.ui,refs/changes/56/13756/1,eclipse.platform.ui/
+# https://bugs.eclipse.org/412121
+VOPATCH=412121,git://git.eclipse.org/gitroot/platform/eclipse.platform.ui,refs/changes/92/14192/1,eclipse.platform.ui/
    </description>
 
    <copyright url="http://www.example.com/copyright">
