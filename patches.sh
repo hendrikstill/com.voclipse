@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# git cherry pick
+#
+
 GIT_REPOS=`grep -h VOPATCH= features/*/feature.xml | cut -f 2 -d'='`
 BASE=`pwd`
 
@@ -10,7 +14,29 @@ for line in $GIT_REPOS; do
     REPO=${array[1]}
     BRANCH=${array[2]}
     LOCAL_PATH=${array[3]}
-    BUNDLES_TO_BUILD=${array[4]}
+
+    # local path has to be relative to aggregator folder
+    cd $LOCAL_PATH
+
+    git fetch $REPO $BRANCH && git cherry-pick FETCH_HEAD
+
+    cd $BASE
+done
+
+#
+# git branch
+#
+
+GIT_REPOS=`grep -h VOBRANCH= features/*/feature.xml | cut -f 2 -d'='`
+BASE=`pwd`
+
+for line in $GIT_REPOS; do
+    # split line into chunks
+    array=(${line//,/ })
+    ID=${array[0]}
+    REPO=${array[1]}
+    BRANCH=${array[2]}
+    LOCAL_PATH=${array[3]}
 
     # local path has to be relative to aggregator folder
     cd $LOCAL_PATH
@@ -23,5 +49,6 @@ for line in $GIT_REPOS; do
 
     cd $BASE
 done
+
 
 
