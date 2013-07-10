@@ -29,11 +29,5 @@ VOPATCH=412121,git://git.eclipse.org/gitroot/platform/eclipse.platform.ui,refs/c
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-   <plugin
-         id="org.eclipse.e4.ui.workbench.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
 </feature>

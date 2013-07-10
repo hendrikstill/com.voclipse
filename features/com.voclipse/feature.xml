@@ -24,9 +24,5 @@
    <includes
          id="com.voclipse.e4.rcp"
          version="0.0.0"/>
-         
-   <includes
-         id="com.voclipse.e4.rcp.source"
-         version="0.0.0"/>
 
 </feature>
