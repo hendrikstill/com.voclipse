@@ -8,8 +8,6 @@
   <rm:locator pattern="^org\.eclipse\.jdt\.ui$" searchPathRef="eclipse.jdt.ui"/>
   <rm:locator pattern="^org\.eclipse\.core\.expressions$" searchPathRef="eclipse.platform.runtime"/>
 
-  <rm:locator pattern="^org\.eclipse\.e4\.ui\.workbench$" searchPathRef="eclipse.platform.ui"/>
-
   <rm:locator pattern="^com\.voclipse(\..+)?" searchPathRef="com.voclipse"/>
   <rm:locator pattern=".*" searchPathRef="default"/>
 

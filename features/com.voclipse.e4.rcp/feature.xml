@@ -5,8 +5,6 @@
       version="1.0.0.qualifier">
 
    <description url="http://www.example.com/description">
-      # https://bugs.eclipse.org/403331
-VOPATCH=403331,git://git.eclipse.org/gitroot/platform/eclipse.platform.ui,refs/changes/56/13756/1,eclipse.platform.ui/
 # https://bugs.eclipse.org/412121
 VOPATCH=412121,git://git.eclipse.org/gitroot/platform/eclipse.platform.ui,refs/changes/92/14192/1,eclipse.platform.ui/
    </description>
@@ -22,12 +20,5 @@ VOPATCH=412121,git://git.eclipse.org/gitroot/platform/eclipse.platform.ui,refs/c
    <requires>
       <import feature="org.eclipse.e4.rcp" version="1.2.0" patch="true"/>
    </requires>
-
-   <plugin
-         id="org.eclipse.e4.ui.workbench"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
 </feature>
