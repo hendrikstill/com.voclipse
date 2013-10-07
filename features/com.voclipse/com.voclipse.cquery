@@ -5,8 +5,8 @@
     <cq:property key="target.ws" value="*"/>
 
     <!-- Need o.e.core.expressions to compile o.e.jdt.ui schema https://bugs.eclipse.org/64182 -->
-    <cq:advisorNode namePattern="^org\.eclipse\.core\.expressions$" versionOverride="[3.4.500.qualifier,3.4.500.qualifier]" sourceLevel="REQUIRE" branchTagPath="/I20130605-2000"/>
-    <cq:advisorNode namePattern="^org\.eclipse\.jdt\.ui$" versionOverride="[3.9.0.qualifier,3.9.0.qualifier]" sourceLevel="REQUIRE" branchTagPath="/I20130605-2000"/>
+    <cq:advisorNode namePattern="^org\.eclipse\.core\.expressions$" versionOverride="[3.4.600.qualifier,3.4.600.qualifier]" sourceLevel="REQUIRE"/>
+    <cq:advisorNode namePattern="^org\.eclipse\.jdt\.ui$" versionOverride="[3.9.100.qualifier,3.9.100.qualifier]" sourceLevel="REQUIRE"/>
 
     <cq:advisorNode namePattern="^com\.voclipse(\..+)?" useTargetPlatform="false" useWorkspace="false"/>
     <cq:advisorNode namePattern="^org\.eclipse\.equinox\.p2\.user\.ui$" skipComponent="true" useTargetPlatform="false"/>

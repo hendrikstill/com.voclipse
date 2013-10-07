@@ -18,7 +18,7 @@ VOPATCH=412121,git://git.eclipse.org/gitroot/platform/eclipse.platform.ui,refs/c
    </license>
 
    <requires>
-      <import feature="org.eclipse.e4.rcp" version="1.2.0" patch="true"/>
+      <import feature="org.eclipse.e4.rcp" version="1.3.0" patch="true"/>
    </requires>
 
 </feature>

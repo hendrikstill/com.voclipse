@@ -25,7 +25,7 @@ VOBRANCH=333428,https://github.com/kuppe/eclipse.jdt.ui.git,master,eclipse.jdt.u
    </license>
 
    <requires>
-      <import feature="org.eclipse.jdt" version="3.9.0" patch="true"/>
+      <import feature="org.eclipse.jdt" version="3.10.0" patch="true"/>
    </requires>
 
    <plugin
